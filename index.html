@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator - Codynn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Generator</h1>
+        <p class="subtitle">Generate stunning images from text prompts using AI </p>
+        <form id="generate-form">
+            <input type="text" id="prompt-input" placeholder="e.g., A futuristic city at sunset..." required>
+            <button type="submit">Generate Image</button>
+        </form>
+        <div id="loading" class="loading" style="display: none;">Generating your image...</div>
+        <div id="image-container" style="display: none;">
+            <img id="ai-image" src="" alt="Generated AI Image">
+            <button id="download-btn" style="display: none;">Download Image</button>
+        </div>
+        <p id="error-message" class="error" style="display: none;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
